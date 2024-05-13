@@ -1,0 +1,2 @@
+### Show lobby
+GET http://localhost:8080/lobby

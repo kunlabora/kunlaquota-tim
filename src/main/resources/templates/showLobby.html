@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lobby</title>
+</head>
+<body>
+
+<h1>Lobby</h1>
+
+<!--/*@thymesVar id="lobbyModel" type="be.kunlabora.crafters.kunlaquota.jitterted.lobby.LobbyController.LobbyModel"*/-->
+<ul th:object="${lobbyModel}">
+    <li th:each="gameView: *{gameViews}">
+        <span th:text="${gameView.name}"></span>
+        <span th:text="${gameView.playerCount}"></span>
+    </li>
+</ul>
+
+</body>
+</html>
